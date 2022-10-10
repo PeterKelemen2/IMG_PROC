@@ -16,6 +16,11 @@ void demoDilateErode() { // Diláció,Erózió
     cv::imshow("dilated", dilated);
     cv::imshow("eroded", eroded);
     cv::waitKey();
+
+    cv::Mat contures;
+    contures = dilated - eroded;
+    cv::imshow("contures", contures);
+    cv::waitKey();
 }
 
 void demoOpened() { // Nyitás
@@ -24,8 +29,6 @@ void demoOpened() { // Nyitás
     cv::Mat eroded, opened;
     cv::erode(Img, eroded, kernel);
     cv::dilate(eroded, opened, kernel);
-
-    
 
     cv::imshow("eroded", eroded);
     cv::imshow("opened", opened);
