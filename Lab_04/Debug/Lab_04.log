@@ -1,0 +1,8 @@
+﻿  CropHandler.cc
+C:\Users\hallgato\Documents\ImgProc\Lab_04\Lab_04\CropHandler.cc(31,38): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  ThresholdHandler.cc
+C:\Users\hallgato\Documents\ImgProc\Lab_04\Lab_04\ThresholdHandler.cc(7,4): warning C4102: 'cv': unreferenced label
+C:\Users\hallgato\Documents\ImgProc\Lab_04\Lab_04\ThresholdHandler.cc(57,4): warning C4102: 'cv': unreferenced label
+C:\Users\hallgato\Documents\ImgProc\Lab_04\Lab_04\ThresholdHandler.cc(71,4): warning C4102: 'cv': unreferenced label
+  Generating Code...
+  Lab_04.vcxproj -> C:\Users\hallgato\Documents\ImgProc\Lab_04\Debug\Lab_04.exe
