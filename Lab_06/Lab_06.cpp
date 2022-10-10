@@ -55,7 +55,7 @@ void demoOpenClosed() {
 
     cv::imshow("img", Img);
     cv::imshow("eroded", eroded);
-    cv::imshow("eroded", opened);
+    cv::imshow("opened", opened);
     cv::waitKey();
 
     //===============================================================================
