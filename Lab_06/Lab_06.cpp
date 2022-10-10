@@ -25,6 +25,8 @@ void demoOpened() { // Nyitás
     cv::erode(Img, eroded, kernel);
     cv::dilate(eroded, opened, kernel);
 
+    
+
     cv::imshow("eroded", eroded);
     cv::imshow("opened", opened);
     cv::waitKey();
@@ -33,6 +35,7 @@ void demoOpened() { // Nyitás
 void demoClosed() { // Zárás
     cv::Mat Img = cv::imread("morp_test_closed.png", 0);
     cv::Mat kernel = cv::Mat::ones(cv::Size(7, 7), CV_8UC1);
+
     cv::Mat dilated, closed;
     cv::dilate(Img, dilated, kernel);
     cv::erode(dilated, closed, kernel);
@@ -42,9 +45,37 @@ void demoClosed() { // Zárás
     cv::waitKey();
 }
 
+void demoOpenClosed() {
+    cv::Mat Img = cv::imread("morp_test_open.png", 0);
+    cv::Mat eroded, opened;
+    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_CROSS, cv::Size(5, 5));
+
+    cv::erode(Img, eroded, kernel);
+    cv::dilate(eroded, opened, kernel);
+
+    cv::imshow("img", Img);
+    cv::imshow("eroded", eroded);
+    cv::imshow("eroded", opened);
+    cv::waitKey();
+
+    //===============================================================================
+    
+    cv::Mat dilated2, closed2;
+    cv::dilate(Img, dilated2, kernel);
+    cv::erode(Img, closed2, kernel);
+
+    cv::Mat img2 = cv::imread("morp_test_closed.png", 0);
+
+    cv::imshow("img2", img2);
+    cv::imshow("dilated2", dilated2);
+    cv::imshow("closed2", closed2);
+    cv::waitKey();
+}
+
 int main()
 {
     demoDilateErode();
-    demoOpened();
-    demoClosed();
+    demoOpenClosed();
+    // demoOpened();
+    // demoClosed();
 }
