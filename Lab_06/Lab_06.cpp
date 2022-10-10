@@ -19,7 +19,7 @@ void demoDilateErode() { // Diláció,Erózió
 }
 
 void demoOpened() { // Nyitás
-    cv::Mat Img = cv::imread("morp_test.png", 0);
+    cv::Mat Img = cv::imread("morp_test_open.png", 0);
     cv::Mat kernel = cv::Mat::ones(cv::Size(3, 3), CV_8UC1);
     cv::Mat eroded, opened;
     cv::erode(Img, eroded, kernel);
@@ -31,7 +31,7 @@ void demoOpened() { // Nyitás
 }
 
 void demoClosed() { // Zárás
-    cv::Mat Img = cv::imread("morp_test.png", 0);
+    cv::Mat Img = cv::imread("morp_test_closed.png", 0);
     cv::Mat kernel = cv::Mat::ones(cv::Size(7, 7), CV_8UC1);
     cv::Mat dilated, closed;
     cv::dilate(Img, dilated, kernel);
