@@ -2,7 +2,7 @@
 
    **Extract OpenCV in C:\opencv**
 
-    ## Setting up OpenCV in Windows:
+   ## Setting up OpenCV in Windows:
     
        1. Open Environmental Variables
     
