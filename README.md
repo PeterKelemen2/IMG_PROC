@@ -16,8 +16,8 @@
    ### Setting up OpenCV in Visual Studio: 
 
     1. Project -> <Project name> properties
-       Configuration: All Configuration
-       Platform: x64
+       Configuration: **All Configuration**
+       Platform: **x64**
 
     2. C/C++ - General - Additional Include Directories:
        <OpenCV_dir>\build\include
@@ -31,4 +31,4 @@
 
     5. Linker Configuration - Debug:
        Linker - Input:
-   Additional Dependencies: **opencv_world460d.lib**
+       Additional Dependencies: **opencv_world460d.lib**
