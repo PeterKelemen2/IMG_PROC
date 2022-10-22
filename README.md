@@ -2,15 +2,15 @@
 
    **Extract OpenCV in C:\opencv**
 
-    • Setting up OpenCV in Windows:
+    ## Setting up OpenCV in Windows:
     
        1. Open Environmental Variables
     
        2. Under "User Variables":
-        Path -> Edit -> **C:\opencv (directory of OpenCV)**
+        Path -> Edit -> C:\opencv (directory of OpenCV)
 
        3. Under "System Variables":
-        Path -> Edit -> **C:\opencv\build\x64\vc15\bin**
+        Path -> Edit -> C:\opencv\build\x64\vc15\bin
 
 
     • Setting up OpenCV in Visual Studio: 
