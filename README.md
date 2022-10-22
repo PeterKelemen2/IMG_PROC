@@ -19,7 +19,7 @@
           Configuration: All Configuration
           Platform: x64
 
-       2. C/C++ - General - Additional Include Directories:
+      2. C/C++ - General - Additional Include Directories:
          <OpenCV_dir>\build\include
 
       3. Linker - General - Additional Library Directories:
