@@ -13,7 +13,7 @@
         Path -> Edit -> C:\opencv\build\x64\vc15\bin
 
 
-    • Setting up OpenCV in Visual Studio: 
+   ### Setting up OpenCV in Visual Studio: 
 
     1. Project -> <Project name> properties
        Configuration: All Configuration
@@ -31,4 +31,4 @@
 
     5. Linker Configuration - Debug:
        Linker - Input:
-       Additional Dependencies: "opencv_world460d.lib"
+   Additional Dependencies: **opencv_world460d.lib**
