@@ -13,7 +13,7 @@
         Path -> Edit -> C:\opencv\build\x64\vc15\bin
 
 
-   #### Setting up OpenCV in Visual Studio: 
+   ### Setting up OpenCV in Visual Studio: 
 
     1. Project -> <Project name> properties
        Configuration: All Configuration
